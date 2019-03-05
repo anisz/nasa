@@ -8,12 +8,13 @@
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 <title>NASA picture of the selected date</title>
 </head>
 
 <body>
 	<section>
-		<div class="jumbotron bg-secondary text-white">
+		<div class="jumbotron text-white">
 			<div class="container">
 				<h1>NASA picture of the selected date</h1>
 			</div>
@@ -30,11 +31,13 @@
 							<c:set var="media_type" value="${pictureByDate.media_type}" />
 							<c:choose>
 								<c:when test="${media_type=='image'}">
-									<img src="${pictureByDate.url}" style="width: 100%; height: auto;" />
+									<img src="${pictureByDate.url}"
+										style="width: 100%; height: auto;" />
 								</c:when>
 								<c:when test="${media_type=='video'}">
 									<div class="video-container">
-										<iframe width="820" height="550" src="${pictureByDate.url}" allowfullscreen > </iframe>
+										<iframe width="820" height="550" src="${pictureByDate.url}"
+											allowfullscreen> </iframe>
 									</div>
 								</c:when>
 							</c:choose>

@@ -8,11 +8,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 <title>Log in</title>
 </head>
 <body>
 	<section>
-		<div class="jumbotron bg-secondary text-white">
+		<div class="jumbotron text-white">
 			<div class="container">
 				<h1>Administration</h1>
 			</div>
@@ -38,12 +39,12 @@
 							<fieldset>
 								<div class="form-group">
 									<input class="form-control" placeholder="username"
-										name='j_username' type="text" /> 
+										name='j_username' type="text" />
 								</div>
 								<div class="form-group">
 									<input class="form-control" placeholder="password"
-										name='j_password' type="password" /> 
-										<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" /> 
+										name='j_password' type="password" /> <input type="hidden"
+										name="${_csrf.parameterName}" value="${_csrf.token}" />
 								</div>
 								<input class="btn btn-default" type="submit" value="Submit" />
 							</fieldset>

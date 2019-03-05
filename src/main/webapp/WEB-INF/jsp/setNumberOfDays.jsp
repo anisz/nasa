@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,7 +18,7 @@
 
 <body>
 	<section>
-		<div class="jumbotron bg-secondary text-white">
+		<div class="jumbotron text-white">
 	<!--  	<a href="<c:url value="/j_spring_security_logout" />" class="btn btn-primary pull-right">
 		Log out
 		</a> -->
